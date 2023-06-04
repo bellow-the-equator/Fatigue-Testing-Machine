@@ -21,7 +21,8 @@ void setup() {
     pinMode(SS, OUTPUT);
 
     //End_Stop
-    pinMode(Y_END_STOP, INPUT);
+    pinMode(Y_END_STOP, INPUT_PULLUP);
+    pinMode(Z_END_STOP, INPUT_PULLUP);
 }
 
 #include <Menu.h>
